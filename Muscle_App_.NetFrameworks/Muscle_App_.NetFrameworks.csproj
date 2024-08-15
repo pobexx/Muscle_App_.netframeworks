@@ -132,6 +132,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AbstractEntity.cs" />
+    <Compile Include="Models\Achivement.cs" />
+    <Compile Include="Models\Menu.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Models\MuscleDbContext.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
