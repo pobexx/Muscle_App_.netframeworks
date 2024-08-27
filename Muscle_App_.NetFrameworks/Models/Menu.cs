@@ -4,7 +4,7 @@ using System.ComponentModel;
 
 namespace Muscle_App_.NetFrameworks.Models
 {
-    [Table("category",Schema = "public")]
+    [Table("menu",Schema = "public")]
     public class Menu: AbstractEntity
     {
         [Column("id"),Key]public int Id { get; set; }
