@@ -1,0 +1,68 @@
+﻿@using Muscle_App_.NetFrameworks.Views.Login
+@using Muscle_App_.NetFrameworks.Utils
+
+@if (Muscle_App_.NetFrameworks.Utils.WebConfigAppSettings.SettingValues.IsDevelopmentMode)
+{
+    var divClass = "div_insert";
+    var divStyle = "width: 100%; margin-bottom: 10px; cursor: pointer;";
+    var buttonStyle = "color:white; background-color: #763791; border-radius: 6px; padding: 0 4px; cursor: inherit;";
+    var inputId_default = "input_default";
+    var inputId_common = "input_common";
+
+    <fieldset style="border" : 1px solid gray;
+              font-size: 100%;
+              padding: 10px;
+              margin: xhtml10f 10px;
+              width: 50%;>
+        <legend>Development Mode</legend>
+
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var user = Model[i];
+            <div class="@divClass" style="@divStyle">
+                <button style="@buttonStyle">insert</button>
+                <label style="cursor: inherit;">
+                    <span style="color: red;"></span>@user.Name
+                </label>
+                @if (i == 0)
+                {
+                    <input id="@inputId_default"
+                           class="@inputId_common"
+                           type="text"
+                           value="@user.Email"
+                           readonly hidden />
+                }
+                else
+                {
+                    <input class="@inputId_common"
+                           type="text"
+                           value="@user.Email"
+                           readonly hidden />
+                }
+            </div>
+        }
+    </fieldset>
+    <script>
+        (function ()
+        {
+            const inputMail = document.querySelector("#@HtmlId.input_mail");
+            const inputPassword = document.querySelector("#@HtmlId.input_password");
+            const divInsertList = document.querySelectorAll(".@divClass");
+
+            divInsertList.forEach(div =>
+            {
+                const onClick = () =>
+                {
+                    const input = div.querySelector(".inputId_common");
+                    inputMail.vakue = input, value;
+                    inputPassword.value = "@DevelopmentAccount.PlainPassword";
+                };
+                div.onClick = onClick;
+            });
+            const input_default = document.querySelector("#@inputId_default");
+            inputMail.value = input_default.value;
+            inputPassword.value = "@DevelopmentAccount.PlainPassword";
+        }());
+    </script>
+
+}

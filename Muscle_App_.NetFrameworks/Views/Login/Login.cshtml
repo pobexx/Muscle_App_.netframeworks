@@ -1,0 +1,21 @@
+﻿@model Muscle_App_.NetFrameworks.Models.ViewModels.LoginViewModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+</head>
+<body>
+    <div>
+        @Html.Partial("~/Views/Login/_LoginForm.cshtml")
+        @if (Model.IsDevelopmentMode)
+        {
+            @Html.Partial("~/Views/Login/_LoginInserter.cshtml", Model.Users)
+        }
+        <div>
+            @Html.ActionLink("新規登録", "Register", "UserRegister")
+        </div>
+    </div>
+</body>
+</html>

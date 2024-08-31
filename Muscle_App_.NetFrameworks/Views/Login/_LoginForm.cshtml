@@ -1,0 +1,50 @@
+﻿@model Muscle_App_.NetFrameworks.Models.ViewModels.LoginViewModel
+@using Muscle_App_.NetFrameworks.Views.Login
+
+@{
+    var formAttribute = new
+    {
+        style = "width: 100%;"
+    };
+}
+ }
+<h2>Login</h2>
+@if (ViewBag.Error != null)
+{
+    <div>@ViewBag.Error</div>
+}
+@using (Html.BeginForm("Login", "Login", FormMethod.Post, formAttribute))
+{
+    var inputMailAttribute = new
+    {
+        @placeholder = "email",
+        id = HtmlId.input_mail
+    };
+    var inputPassAttribute = new
+    {
+        @placeholder = "password",
+        id = HtmlId.input_password,
+        autocomplete = "off",
+        required = "required"
+    };
+
+    var sampleAttribute = new
+    {
+        id = "sample",
+        background = "blue"
+    };
+
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email, null, inputMailAttribute)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Password)
+        @Html.PasswordFor(m => m.Password, inputPassAttribute)
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+    <div>
+        <input type="submit" value="ログイン" />
+    </div>
+}
