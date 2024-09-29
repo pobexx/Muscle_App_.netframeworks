@@ -2,10 +2,12 @@
 
 namespace Muscle_App_.NetFrameworks.Models
 {
-    internal class MuscleDbContext: DbContext
+    public class MuscleDbContext: DbContext
     {
         public MuscleDbContext() : base("name=MuscleDbContext") { }
 
         public DbSet<User> Users { get; set; }
+
+        //public System.Data.Entity.DbSet<Achivement> Achivements { get; set; }
     }
 }

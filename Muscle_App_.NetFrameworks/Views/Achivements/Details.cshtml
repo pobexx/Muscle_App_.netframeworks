@@ -1,0 +1,99 @@
+﻿@model Muscle_App_.NetFrameworks.Models.Achivement
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Achivement</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MenuId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MenuId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Times)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Times)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Deleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Deleted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDatetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UpdatedDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UpdatedDatetime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeletedDatetime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeletedDatetime)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
