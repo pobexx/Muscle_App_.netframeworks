@@ -8,6 +8,12 @@ namespace Muscle_App_.NetFrameworks.Models
 
         public DbSet<User> Users { get; set; }
 
-        //public System.Data.Entity.DbSet<Achivement> Achivements { get; set; }
+        public DbSet<Category> Categories { get; set; }
+
+        public DbSet<Menu> Menus { get; set; }
+
+        public DbSet<Achivement> Achivements { get; set; }
+
+
     }
 }

@@ -187,6 +187,10 @@
     <Compile Include="Migrations\202408271232511_Initial.designer.cs">
       <DependentUpon>202408271232511_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202409301448112_DeclareAllEntities.cs" />
+    <Compile Include="Migrations\202409301448112_DeclareAllEntities.Designer.cs">
+      <DependentUpon>202409301448112_DeclareAllEntities.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EntityModels\AbstractEntity.cs" />
     <Compile Include="Models\EntityModels\Achivement.cs" />
@@ -277,6 +281,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202408271232511_Initial.resx">
       <DependentUpon>202408271232511_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202409301448112_DeclareAllEntities.resx">
+      <DependentUpon>202409301448112_DeclareAllEntities.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
