@@ -17,7 +17,7 @@ namespace Muscle_App_.NetFrameworks.Models
 
         [Description("ログインId")]
         [Column("loginId"),EmailAddress,Required] public string EmailAddress { get; set; }
-
+         
         [Description("パスワード")]        
         [Column("password"),DataType(DataType.Password),Required] public string Password { get; set; }
 
