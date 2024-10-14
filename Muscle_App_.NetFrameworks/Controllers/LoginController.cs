@@ -28,15 +28,13 @@ namespace Muscle_App_.NetFrameworks.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(LoginViewModel model)
+        public ActionResult LoginPost(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
                 if (UserAuthentication(model.Email, model.Password))
                 {
                     FormsAuthentication.SetAuthCookie(model.Email, false);
-                    Session["LoggedInUser"] = model.Email;
-
                     return RedirectToAction("Index", "Home");
                 }
             }
@@ -46,7 +44,6 @@ namespace Muscle_App_.NetFrameworks.Controllers
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
-            Session["LoggedInUser"] = null;
             return RedirectToAction("Login", "Login");
         }
 

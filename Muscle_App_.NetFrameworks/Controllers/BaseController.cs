@@ -43,9 +43,7 @@ namespace Muscle_App_.NetFrameworks.Controllers
         protected bool isLogin()
         {
             return userIsExisted()
-                && User.Identity.IsAuthenticated
-                &&Session != null
-                && (string)Session["LoggedInUser"] == UserId;
+                && User.Identity.IsAuthenticated;
         }
       
 

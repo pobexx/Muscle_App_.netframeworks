@@ -1,4 +1,6 @@
-﻿@model Muscle_App_.NetFrameworks.Models.ViewModels.LoginViewModel
+﻿@using Muscle_App_.NetFrameworks.Controllers
+@using System.Web.Mvc
+@model Muscle_App_.NetFrameworks.Models.ViewModels.LoginViewModel
 @using Muscle_App_.NetFrameworks.Views.Login
 
 @{
@@ -13,7 +15,7 @@
 {
     <div>@ViewBag.Error</div>
 }
-@using (Html.BeginForm("Login", "Login", FormMethod.Post, formAttribute))
+@using (Html.BeginForm("LoginPost", "Login", FormMethod.Post, new { @class = "form" }))
 {
     var inputMailAttribute = new
     {
