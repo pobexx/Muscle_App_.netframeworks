@@ -3,6 +3,7 @@
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
+    using Muscle_App_.NetFrameworks.Utils;
     using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<Muscle_App_.NetFrameworks.Models.MuscleDbContext>
@@ -18,6 +19,7 @@
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
+            Seeder.BeginSeeding(context);
         }
     }
 }
