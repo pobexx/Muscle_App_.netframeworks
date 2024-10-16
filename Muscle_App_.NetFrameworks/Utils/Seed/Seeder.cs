@@ -1,4 +1,5 @@
 ﻿using Muscle_App_.NetFrameworks.Models;
+using Muscle_App_.NetFrameworks.Utils.WebConfigAppSettings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +11,14 @@ namespace Muscle_App_.NetFrameworks.Utils
     {
         public static void BeginSeeding(MuscleDbContext context)
         {
-            UserSamples.Upsert(context);
-            MenuSamples.Upsert(context);
-            CategorySamples.Upsert(context);
-            AchivementSamples.Upsert(context);
+            if (SettingValues.IsActivateSeedMethod)
+            {
+                UserSamples.Upsert(context);
+                MenuSamples.Upsert(context);
+                CategorySamples.Upsert(context);
+                //AchivementSamples.Upsert(context);
+            }
+            return;
         }
     }
 }

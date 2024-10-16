@@ -7,7 +7,7 @@ namespace Muscle_App_.NetFrameworks.Models
     public class User: AbstractEntity
     {
         [Description("自動連番のId")]
-        [Column("Id"),Key] public int Id { get; set; }
+        [Column("id"),Key] public int Id { get; set; }
 
         [Description("ユーザ名")]
         [Column("name"),        Required] public string Name {  get; set; }

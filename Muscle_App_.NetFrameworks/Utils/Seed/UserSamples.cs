@@ -10,15 +10,15 @@ namespace Muscle_App_.NetFrameworks.Utils
 {
     public  static class UserSamples
     {
-        public const string RowPass = "Sample1234";
+        public const string RawPass = "Sample1234";
         public static void Upsert(MuscleDbContext context)
         {
             var newUsers =NewUsers();
             foreach (var user in newUsers)
             {
-                var anyone = context.Users.FirstOrDefault(u => u.Id == user.Id);
-                if (anyone == null) context.Users.Add(user);
-                else Update(anyone, user);
+                var old = context.Users.FirstOrDefault(u => u.Id == user.Id);
+                if (old == null) context.Users.Add(user);
+                else Update(old, user);
             }
             context.SaveChanges();
         }
@@ -26,7 +26,7 @@ namespace Muscle_App_.NetFrameworks.Utils
         public static IEnumerable<User> NewUsers()
         {
             var now = DateTime.Now;
-            var password = HashService.GetHashForPassword(RowPass);
+            var password = HashService.GetHashForPassword(RawPass);
             return new List<User>
             {
                 new User { Id = 1,Name = "Master", Username = "Master", EmailAddress = "master.example.com", Password = password, CreatedDatetime = now, Deleted = false},

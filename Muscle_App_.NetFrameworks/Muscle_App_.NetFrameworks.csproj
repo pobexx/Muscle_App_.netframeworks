@@ -191,6 +191,14 @@
     <Compile Include="Migrations\202409301448112_DeclareAllEntities.Designer.cs">
       <DependentUpon>202409301448112_DeclareAllEntities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202410141318591_AddCommonColumn.cs" />
+    <Compile Include="Migrations\202410141318591_AddCommonColumn.Designer.cs">
+      <DependentUpon>202410141318591_AddCommonColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202410141345318_RenameColumn.cs" />
+    <Compile Include="Migrations\202410141345318_RenameColumn.Designer.cs">
+      <DependentUpon>202410141345318_RenameColumn.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EntityModels\AbstractEntity.cs" />
     <Compile Include="Models\EntityModels\Achivement.cs" />
@@ -289,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202409301448112_DeclareAllEntities.resx">
       <DependentUpon>202409301448112_DeclareAllEntities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410141318591_AddCommonColumn.resx">
+      <DependentUpon>202410141318591_AddCommonColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202410141345318_RenameColumn.resx">
+      <DependentUpon>202410141345318_RenameColumn.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

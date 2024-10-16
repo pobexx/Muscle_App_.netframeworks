@@ -11,6 +11,7 @@ namespace Muscle_App_.NetFrameworks.Utils.WebConfigAppSettings
     {
         public static bool IsDevelopmentMode => GetBoolSafely(Keys.IS_DEVELOPMENT_MODE);
 
+        public static bool IsActivateSeedMethod => GetBoolSafely(Keys.IsActivateSeedMethod);
         public static string Salt => GetStringSafely(Keys.SALT, DefaultValues.SALT);
         public static int Streach => GetIntSafely(Keys.STREACH, DefaultValues.STREACH);
     }

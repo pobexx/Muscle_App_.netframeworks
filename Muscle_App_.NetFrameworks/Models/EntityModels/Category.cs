@@ -7,11 +7,13 @@ namespace Muscle_App_.NetFrameworks.Models
     [Table("category", Schema = "public")]
     public class Category: AbstractEntity
     {
-       [Column("Id"),Key] public int Id { get; set; }
+       [Column("id"),Key] public int Id { get; set; }
 
-        [Column("User_Id"),Required]public int UserId { get; set; }
+        [Column("user_Id"),Required]public int UserId { get; set; }
 
         [Column("parts"),Required]public string Parts { get; set; }
+
+        [Column("common"), Required]public bool Common { get; set; }
 
     }
 }

@@ -8,6 +8,7 @@ namespace Muscle_App_.NetFrameworks.Utils.WebConfigAppSettings
     public static class Keys
     {
         public const string IS_DEVELOPMENT_MODE = "IsDevelopmentMode";
+        public const string IsActivateSeedMethod = "IsActivateSeedMethod";
         public const string SALT = "Salt";
         public const string STREACH = "Streach";
     }

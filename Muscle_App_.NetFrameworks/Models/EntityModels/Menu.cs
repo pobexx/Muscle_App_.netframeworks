@@ -13,6 +13,8 @@ namespace Muscle_App_.NetFrameworks.Models
 
         [Column("category_id"),Required]public int CategoryId { get; set; }
 
-        [Column("item"),Required]public string Item { get; set; } 
+        [Column("item"),Required]public string Item { get; set; }
+
+        [Column("common"), Required] public bool Common { get; set; }
     }
 }
