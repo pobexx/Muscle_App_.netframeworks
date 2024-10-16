@@ -29,9 +29,9 @@ namespace Muscle_App_.NetFrameworks.Utils
             var password = HashService.GetHashForPassword(RawPass);
             return new List<User>
             {
-                new User { Id = 1,Name = "Master", Username = "Master", EmailAddress = "master.example.com", Password = password, CreatedDatetime = now, Deleted = false},
-                new User { Id = 2,Name = "Begginer", Username = "Begginer", EmailAddress = "begginer@example.com", Password = password, CreatedDatetime = now, Deleted = false },
-                new User { Id = 3,Name = "Yuki", Username = "Pobe", EmailAddress = "y@example.com", Password = password, CreatedDatetime = now, Deleted = false }
+                new User { Id = 2,Name = "Master", Username = "Master", EmailAddress = "master@example.com", Password = password, CreatedDatetime = now, Deleted = false},
+                new User { Id = 3,Name = "Begginer", Username = "Begginer", EmailAddress = "begginer@example.com", Password = password, CreatedDatetime = now, Deleted = false },
+                new User { Id = 4,Name = "Yuki", Username = "Pobe", EmailAddress = "y@example.com", Password = password, CreatedDatetime = now, Deleted = false }
             };
         }
 

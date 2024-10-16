@@ -25,12 +25,12 @@ namespace Muscle_App_.NetFrameworks.Utils
             var now = DateTime.Now;
             return new List<Category>
             {
-                new Category {Id = 1, UserId = 1, Parts = "脚", Common = true, CreatedDatetime = now, Deleted = false},
-                new Category {Id = 2, UserId = 1, Parts = "肩", Common = true, CreatedDatetime = now, Deleted = false},
-                new Category {Id = 3, UserId = 1, Parts = "腕", Common = true, CreatedDatetime = now, Deleted = false},
-                new Category {Id = 4, UserId = 1, Parts = "胸", Common = true, CreatedDatetime = now, Deleted = false},
-                new Category {Id = 5, UserId = 1, Parts = "背中", Common = true, CreatedDatetime = now, Deleted = false},
-                new Category {Id = 6, UserId = 1, Parts = "腹", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 1, UserId = 4, Parts = "脚", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 2, UserId = 4, Parts = "肩", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 3, UserId = 4, Parts = "腕", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 4, UserId = 4, Parts = "胸", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 5, UserId = 4, Parts = "背中", Common = true, CreatedDatetime = now, Deleted = false},
+                new Category {Id = 6, UserId = 4, Parts = "腹", Common = true, CreatedDatetime = now, Deleted = false},
 
             };
         }

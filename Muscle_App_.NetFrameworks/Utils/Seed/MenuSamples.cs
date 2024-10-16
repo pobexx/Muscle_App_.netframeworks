@@ -25,12 +25,12 @@ namespace Muscle_App_.NetFrameworks.Utils
             var now = DateTime.Now;
             return new List<Menu>
             {
-                new Menu { Id = 1, UserId = 1,CategoryId = 1,Item = "スクワット", Common = true, CreatedDatetime = now, Deleted = false},
-                new Menu { Id = 1, UserId = 1,CategoryId = 2,Item = "ショルダープレス", Common = true, CreatedDatetime = now, Deleted = false},
-                new Menu { Id = 1, UserId = 1,CategoryId = 1,Item = "アームカール", Common = true, CreatedDatetime = now, Deleted = false},
-                new Menu { Id = 1, UserId = 1,CategoryId = 3,Item = "ベンチプレス", Common = true, CreatedDatetime = now, Deleted = false},
-                new Menu { Id = 1, UserId = 1,CategoryId = 1,Item = "懸垂", Common = true, CreatedDatetime = now, Deleted = false},
-                new Menu { Id = 1, UserId = 1,CategoryId = 1,Item = "ドラゴンフライ", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 1,Item = "スクワット", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 2,Item = "ショルダープレス", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 1,Item = "アームカール", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 3,Item = "ベンチプレス", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 1,Item = "懸垂", Common = true, CreatedDatetime = now, Deleted = false},
+                new Menu { Id = 1, UserId = 4,CategoryId = 1,Item = "ドラゴンフライ", Common = true, CreatedDatetime = now, Deleted = false},
             };
         }
 

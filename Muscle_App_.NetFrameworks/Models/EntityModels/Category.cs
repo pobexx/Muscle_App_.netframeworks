@@ -9,7 +9,7 @@ namespace Muscle_App_.NetFrameworks.Models
     {
        [Column("id"),Key] public int Id { get; set; }
 
-        [Column("user_Id"),Required]public int UserId { get; set; }
+        [Column("user_id"),Required]public int UserId { get; set; }
 
         [Column("parts"),Required]public string Parts { get; set; }
 
