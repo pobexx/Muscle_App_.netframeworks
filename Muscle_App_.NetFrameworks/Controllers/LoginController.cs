@@ -28,7 +28,7 @@ namespace Muscle_App_.NetFrameworks.Controllers
         }
 
         [HttpPost]
-        public ActionResult LoginPost(LoginViewModel model)
+        public ActionResult Login(LoginViewModel model)
         {
             if (ModelState.IsValid)
             {
