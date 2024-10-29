@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.muscle-parts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: 1px solid #0000ff;
+    /* 各部位の枠線を繋げる */
+}
+
+.part {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-right: 1px solid #0000ff;
+}
+
+.part:last-child {
+    border-right: none;
+    /* 最後の要素の右側の枠線を削除 */
+}
+
+.part.selected {
+    background-color: #0000ff;
+    color: #fff;
+}
+
+.part:not(.selected) {
+    background-color: #fff;
+    color: #0000ff;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* .view-btn {
+    background-color: #434345;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+} */
+
+/* カレンダー、グラフの切り替え */
+.view-btn {
+    background-color: #d3d3d3;
+    /* デフォルトは灰色 */
+    color: #000;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.view-btn.selected {
+    background-color: #fff;
+    /* 選択された方は白 */
+}
+
+.calendar-view {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+}
+
+.day {
+    color: #0000ff;
+    text-align: center;
+}
+
+.dates-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.record {
+    background-color: #0000ff;
+    color: #fff;
+}
